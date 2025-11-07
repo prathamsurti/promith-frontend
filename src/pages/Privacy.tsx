@@ -12,7 +12,7 @@ const Privacy = () => {
             <section>
               <h2 className="text-3xl font-bold mb-4">1. Introduction</h2>
               <p className="text-gray-600 leading-relaxed">
-                Welcome to Orbai. We respect your privacy and are committed to protecting your
+                Welcome to Promith. We respect your privacy and are committed to protecting your
                 personal data. This privacy policy will inform you about how we look after your
                 personal data and tell you about your privacy rights.
               </p>
@@ -67,8 +67,8 @@ const Privacy = () => {
               <h2 className="text-3xl font-bold mb-4">6. Contact Us</h2>
               <p className="text-gray-600 leading-relaxed">
                 If you have any questions about this privacy policy, please contact us at{' '}
-                <a href="mailto:privacy@orbai.com" className="text-primary hover:underline">
-                  privacy@orbai.com
+                <a href="mailto:privacy@promith.com" className="text-primary hover:underline">
+                  privacy@promith.com
                 </a>
               </p>
             </section>

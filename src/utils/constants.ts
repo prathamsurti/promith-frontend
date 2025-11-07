@@ -68,15 +68,15 @@ export const FOOTER_LINKS = {
     { label: 'Terms', href: '/terms' },
   ],
   social: [
-    { platform: 'twitter', url: 'https://twitter.com/orbai' },
-    { platform: 'linkedin', url: 'https://linkedin.com/company/orbai' },
-    { platform: 'github', url: 'https://github.com/orbai' },
+    { platform: 'twitter', url: 'https://twitter.com/promith' },
+    { platform: 'linkedin', url: 'https://linkedin.com/company/promith' },
+    { platform: 'github', url: 'https://github.com/promith' },
   ],
 } as const;
 
 // Contact Information
 export const CONTACT_INFO = {
-  email: 'hello@orbai.com',
+  email: 'hello@promith.com',
   phone: '+1 (555) 123-4567',
   address: 'San Francisco, CA',
 } as const;

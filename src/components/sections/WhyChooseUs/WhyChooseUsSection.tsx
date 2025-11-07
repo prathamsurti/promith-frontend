@@ -4,29 +4,20 @@ import './styles.css';
 import { fadeInUp, tagsVariants } from './animations.js';
 import { BenefitCard } from './components/index.js';
 import type { Benefit } from './types.js';
+import content from '../../../data/content.json';
 
 // Main Section Component
 const WhyChooseUsSection = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
-  const benefits: Benefit[] = [
-    {
-      title: 'Real-Time Analytics',
-      description: 'Stay ahead with accurate, real-time performance tracking',
-      graphic: 'analytics',
-    },
-    {
-      title: 'AI-Driven Growth',
-      description: 'Make smarter moves with accurate, real-time business insights.',
-      graphic: 'growth',
-    },
-    {
-      title: 'Sync in real time',
-      description: 'connect with your team instantly to track progress and updates',
-      graphic: 'sync',
-    },
-  ];
+  const benefits: Benefit[] = content.whyChooseUs.benefits.map(benefit => ({
+    title: benefit.title,
+    description: benefit.description,
+    graphic: benefit.graphic as 'analytics' | 'growth' | 'sync',
+  }));
+
+  const tags = [...content.whyChooseUs.tags, ...content.whyChooseUs.tags]; // Duplicate for marquee effect
 
   return (
     <section
@@ -42,13 +33,13 @@ const WhyChooseUsSection = () => {
           className="section-header text-center mb-12 sm:mb-16"
         >
           <div className="badge-pill inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6">
-            <span className="text-sm font-medium text-gray-700">✨ BENEFITS</span>
+            <span className="text-sm font-medium text-gray-700">{content.whyChooseUs.badge}</span>
           </div>
           <h2 className="gradient-heading mb-6">
-            Why Choose Us
+            {content.whyChooseUs.title}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Partner with an AI agency delivering smart solutions.
+            {content.whyChooseUs.subtitle}
           </p>
         </motion.div>
 
@@ -72,20 +63,7 @@ const WhyChooseUsSection = () => {
             transition={tagsVariants.transition}
             className="marquee-content"
           >
-            {[
-              'AI Assistance',
-              'Scalable Solutions',
-              'Personalized Experiences',
-              'Cost Effective',
-              'Real-Time Insights',
-              'AI Automation',
-              'AI Assistance',
-              'Scalable Solutions',
-              'Personalized Experiences',
-              'Cost Effective',
-              'Real-Time Insights',
-              'AI Automation',
-            ].map((tag, index) => (
+            {tags.map((tag, index) => (
               <span
                 key={index}
                 className="tag-pill px-4 py-2 text-sm font-medium text-gray-700 rounded-full transition-colors cursor-default whitespace-nowrap"

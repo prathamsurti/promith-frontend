@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { NAV_LINKS } from '../utils/constants';
+import content from '../data/content.json';
 import './Header.css';
 
 const Header = () => {
@@ -16,17 +16,20 @@ const Header = () => {
         <div className="header-inner">
           {/* Logo */}
           <Link to="/" className="logo">
-            Orbai
+            <img
+              src={content.navigation.logo}
+              alt="Promith Logo"
+            />
           </Link>
 
           {/* Right side: Nav + CTA + Menu */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
             {/* Desktop Navigation */}
             <nav className={`navbar ${isMobileMenuOpen ? 'active' : ''}`}>
-              {NAV_LINKS.map((link) => {
+              {content.navigation.links.map((link) => {
                 // Check if it's an internal route or hash link
                 const isInternalRoute = link.href.startsWith('/') && !link.href.includes('#');
-                
+
                 if (isInternalRoute) {
                   return (
                     <Link
@@ -38,11 +41,11 @@ const Header = () => {
                     </Link>
                   );
                 }
-                
+
                 // For hash links and external links, use <a>
                 return (
-                  <a 
-                    key={link.href} 
+                  <a
+                    key={link.href}
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -53,9 +56,9 @@ const Header = () => {
             </nav>
 
             {/* Mobile Menu Toggle */}
-            <button 
-              id="menu-icon" 
-              onClick={toggleMobileMenu} 
+            <button
+              id="menu-icon"
+              onClick={toggleMobileMenu}
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? (

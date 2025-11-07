@@ -9,7 +9,7 @@ export default defineConfig({
     strictPort: false,
     allowedHosts: [
       'figures-modules-person-dreams.trycloudflare.com',
-      '8888oaks-tower-responded-started.trycloudflare.com'
+      '.trycloudflare.com'
     ],
     hmr: {
       clientPort: 443,

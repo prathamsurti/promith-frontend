@@ -1,8 +1,7 @@
 {
   "hero": {
     "title": "Promith",
-    "subtitle": "AI-powered automation solutions for modern businesses. Transform your workflow with intelligent automation.",
-    "logoSrc": "/src/assets/images/Promith-Logo-Recreation-Exact-SVG-3.png",
+    "subtitle": "More than just a system",
     "backgroundVideo": "https://framerusercontent.com/assets/aMPvRVYHFQxBoB0v2qyJln83jI.mp4",
     "ctaButtons": [
       {
@@ -25,10 +24,16 @@
       }
     ]
   },
+  "founderNote": {
+    "quote": "\"Fire has always existed, but it was Prometheus who gave it to humanity - a gift that changed everything. Technology is no different: it's already here, all around us. We're here to guide you in harnessing it, making it simple, accessible, and powerful for your business. Our mission is to turn complex tools into smart, easy-to-use solutions that help you grow, innovate, and succeed.\"",
+    "founderName": "Pratham Surti",
+    "founderTitle": "Founder of Promith",
+    "founderImage": "https://framerusercontent.com/images/W7xYkGKzPzvnPv58ZBNzxS3JZI.jpg?width=4000&height=4000"
+  },
   "whyChooseUs": {
-    "badge": "✨ BENEFITS",
-    "title": "Why Choose Us",
-    "subtitle": "Partner with an AI agency delivering smart solutions.",
+    "badge": "WHY CHOOSE US",
+    "title": "AI-Driven Growth",
+    "subtitle": "See beyond the numbers. Act with precision. Grow with intelligence.",
     "benefits": [
       {
         "title": "Real-Time Analytics",
@@ -41,8 +46,8 @@
         "graphic": "growth"
       },
       {
-        "title": "Sync in real time",
-        "description": "connect with your team instantly to track progress and updates",
+        "title": "24/7 Support",
+        "description": "Connect with our team instantly to get any kind of support",
         "graphic": "sync"
       }
     ],
@@ -61,8 +66,8 @@
     "subtitle": "Discover features that simplify workflows & grow your business.",
     "features": [
       {
-        "title": "Cutting-Edge AI",
-        "description": "Deploy AI solutions that adapt quickly, learn fast, and scale with your business needs.",
+        "title": "Inventory",
+        "description": "Smart inventory for smart businesses. From prep to wastage, tracks everything in real time, predicts demand, plans restocking, and removes guesswork.",
         "image": "https://framerusercontent.com/images/jt6hxbLaCBNrS66LsJbeYLxd4no.png?width=1200&height=1200",
         "icon": {
           "type": "svg",
@@ -72,8 +77,8 @@
         "isLarge": true
       },
       {
-        "title": "Automated Workflows",
-        "description": "Streamline tasks and boost efficiency with powerful, scalable AI-powered automation tools for growing teams and projects.",
+        "title": "Task",
+        "description": "Every task matters. Work smarter, together. From daily tasks to big-picture goals, keep your entire team aligned, organised, and productive. Assign, track, and manage every task effortlessly.",
         "icon": {
           "type": "svg",
           "content": "<path d=\"M237.94,107.21a8,8,0,0,0-3.89-5.4l-29.83-17-.12-33.62a8,8,0,0,0-2.83-6.08,111.91,111.91,0,0,0-36.72-20.67,8,8,0,0,0-6.46.59L128,41.85,97.88,25a8,8,0,0,0-6.47-.6A111.92,111.92,0,0,0,54.73,45.15a8,8,0,0,0-2.83,6.07l-.15,33.65-29.83,17a8,8,0,0,0-3.89,5.4,106.47,106.47,0,0,0,0,41.56,8,8,0,0,0,3.89,5.4l29.83,17,.12,33.63a8,8,0,0,0,2.83,6.08,111.91,111.91,0,0,0,36.72,20.67,8,8,0,0,0,6.46-.59L128,214.15,158.12,231a7.91,7.91,0,0,0,3.9,1,8.09,8.09,0,0,0,2.57-.42,112.1,112.1,0,0,0,36.68-20.73,8,8,0,0,0,2.83-6.07l.15-33.65,29.83-17a8,8,0,0,0,3.89-5.4A106.47,106.47,0,0,0,237.94,107.21ZM128,168a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z\"></path>",
@@ -81,8 +86,8 @@
         }
       },
       {
-        "title": "Insightful Analytics",
-        "description": "Gain deep, real-time data insights with advanced AI analytics to guide smarter strategies, decisions, and scalable business growth.",
+        "title": "Scheduling",
+        "description": "Simplify scheduling with our automated rota system. Use AI to build perfect rotas, balance shifts, predict demand, and keep your business running seamlessly.",
         "icon": {
           "type": "svg",
           "content": "<path d=\"M240,56v64a8,8,0,0,1-13.66,5.66L200,99.31l-58.34,58.35a8,8,0,0,1-11.32,0L96,123.31,29.66,189.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0L136,140.69,188.69,88,162.34,61.66A8,8,0,0,1,168,48h64A8,8,0,0,1,240,56Z\"></path>",
@@ -90,8 +95,8 @@
         }
       },
       {
-        "title": "AI-Powered Support",
-        "description": "Enhance customer experience with AI-driven virtual assistants available for support and engagement.",
+        "title": "AI Assistant",
+        "description": "Meet Agani - your AI-powered partner in business intelligence. From insights to action, Agani helps you make smarter decisions, faster. Fire up your business with Agani.",
         "image": "https://framerusercontent.com/images/NUbGSZcPrAH7CFfBazSJOsGIP4.png?width=800&height=1200",
         "icon": {
           "type": "svg",
@@ -130,7 +135,7 @@
       {
         "number": "01",
         "title": "Workflow Assessment",
-        "description": "We begin by examining your existing workflows to identify where AI can deliver the greatest impact.",
+        "description": "We spend time with you to understand your business and your data. Then, we provide support and solutions designed to fit your needs - helping you streamline operations and achieve growth.",
         "image": "https://framerusercontent.com/images/I11kmPYZO5IptYaE3LYgilI1Xk.jpeg?width=1200&height=800",
         "icon": {
           "type": "svg",
@@ -141,7 +146,7 @@
       {
         "number": "02",
         "title": "Deploy with Confidence",
-        "description": "Our team develops custom AI systems built around your goals, ensuring safe and reliable deployment.",
+        "description": "Deploy your systems with zero stress. We provide you end-to-end support, ensuring your processes run effortlessly and your team is empowered to succeed.",
         "image": "https://framerusercontent.com/images/ozpQ1n5ntn1iNwWiM7StpAZO2IM.jpeg?scale-down-to=1024",
         "icon": {
           "type": "svg",
@@ -152,7 +157,7 @@
       {
         "number": "03",
         "title": "Ongoing Support & Optimization",
-        "description": "After deployment, we provide support and refine your AI systems to keep them performing at their best.",
+        "description": "With us, you're never alone. Our AI assistant, Agani, monitors your operations, provides insights, and offers second opinions to guide your growth. And our 24/7 helpline isn't just for tech support - it's your growth partner, ready to advise, guide, and help you make smarter business decisions anytime.",
         "image": "https://framerusercontent.com/images/rL2mn1WNvlJqhxa5RfsgWqkaxg.png?width=800&height=1015",
         "icon": {
           "type": "svg",
@@ -167,7 +172,7 @@
     "subtitle": "See what our customers have to say about their experience",
     "testimonials": [
       {
-        "quote": "Orbai has transformed our workflow completely. We've saved over 20 hours per week on repetitive tasks.",
+        "quote": "Promith has transformed our workflow completely. We've saved over 20 hours per week on repetitive tasks.",
         "author": "Sarah Johnson",
         "role": "CEO",
         "company": "TechStart Inc",
@@ -207,6 +212,7 @@
   },
   "footer": {
     "companyName": "Promith",
+    "logo": "/src/assets/images/Promith-Logo-Recreation-Exact-SVG-3.png",
     "description": "AI-powered automation solutions for modern businesses",
     "links": {
       "company": [

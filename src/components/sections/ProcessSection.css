@@ -1,13 +1,14 @@
 /* Process Section Styles */
 .process-section {
   width: 100%;
-  padding: 80px 40px;
+  padding: 80px 20px;
   background-color: #f5f5f5;
   border-radius: 32px;
-  margin: 2rem 1rem;
+  margin: 2rem 0;
   
   @media (min-width: 768px) {
-    margin: 3rem 2rem;
+    padding: 80px 40px;
+    margin: 3rem 0;
   }
 }
 
