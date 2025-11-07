@@ -1,0 +1,23 @@
+{
+  "provider": "strapi",
+  "defaultLocale": "en",
+  "contentTypes": {
+    "hero": "hero-section",
+    "benefit": "benefits",
+    "feature": "features",
+    "processStep": "process-steps",
+    "testimonial": "testimonials",
+    "navLink": "navigation-links",
+    "footerLink": "footer-links",
+    "socialLink": "social-links"
+  },
+  "preview": {
+    "enabled": false,
+    "previewQueryParam": "preview",
+    "previewHeader": "X-Preview-Mode"
+  },
+  "cache": {
+    "staleTime": 300000,
+    "cacheTime": 600000
+  }
+}
