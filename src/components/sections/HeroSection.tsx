@@ -60,7 +60,7 @@ const HeroSection = ({
           {/* Logo without background */}
           {logoSrc && (
             <div className="hero-logo-wrapper">
-              <img 
+              {/* <img 
                 src={logoSrc} 
                 alt="Promith Logo" 
                 className="hero-logo-image"
@@ -68,7 +68,7 @@ const HeroSection = ({
                   width: content.hero.logoSize?.width || '80px',
                   height: content.hero.logoSize?.height || '80px'
                 }}
-              />
+              /> */}
             </div>
           )}
 

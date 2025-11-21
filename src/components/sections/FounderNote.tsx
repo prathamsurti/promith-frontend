@@ -96,7 +96,7 @@ const FounderNote = ({
           >
             <div className="founder-image-wrapper">
               <div className="founder-image">
-                <img src={founderImage} alt={founderName} />
+                {/* <img src={founderImage} alt={founderName} /> */}
               </div>
             </div>
             <div className="founder-details">
