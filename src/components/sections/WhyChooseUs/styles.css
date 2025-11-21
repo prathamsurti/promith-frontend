@@ -9,6 +9,16 @@
   @media (min-width: 768px) {
     margin: 3rem 0;
   }
+  
+  @media (max-width: 768px) {
+    margin: 1rem 0;
+    border-radius: 24px;
+  }
+  
+  @media (max-width: 640px) {
+    margin: 0.5rem 0;
+    border-radius: 16px;
+  }
 }
 
 /* Benefit Cards - Main container with neumorphism */

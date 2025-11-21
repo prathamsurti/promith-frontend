@@ -257,9 +257,32 @@
 }
 
 /* Responsive */
+/* Tablet breakpoint */
+@media (max-width: 1024px) {
+  .process-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .process-card:nth-child(1) {
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+  }
+  
+  .process-card:nth-child(2),
+  .process-card:nth-child(3) {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+  }
+}
+
+/* Mobile breakpoint */
 @media (max-width: 768px) {
   .process-section {
     padding: 60px 20px;
+    margin: 1rem 0;
   }
 
   .process-title {

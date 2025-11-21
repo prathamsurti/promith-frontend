@@ -14,12 +14,12 @@ const container: Variants = {
 }
 
 const itemFadeUp: Variants = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 20 },
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
 }
 
 const itemSlideRight: Variants = {
-  hidden: { opacity: 0, x: 70 },
+  hidden: { opacity: 0, x: 30 },
   show: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
 }
 
@@ -57,7 +57,7 @@ const ProcessSection: React.FC = () => {
           variants={container}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.1 }}
         >
           {content.process.steps.map((step, index) => (
             <motion.div

@@ -58,6 +58,37 @@ section:has(.hero-section-container) {
   text-align: center;
 }
 
+/* Hero CTA Buttons Container */
+.hero-section-container .flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Ensure buttons are centered on all screen sizes */
+@media (max-width: 1024px) {
+  .hero-section-container .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section-container .flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section-container .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /* Main Hero Section Container */
 .hero-section-container {
   align-content: center;
@@ -111,8 +142,8 @@ section:has(.hero-section-container) {
   border-radius: 0px;
   cursor: auto;
   
-  /* Filter trick: inverts black background to white */
-  filter: brightness(0.69) grayscale(1) invert(1);
+  /* Filter to make it white */
+  /* filter: brightness(1) grayscale(1) invert(1); */
 }
 
 /* Hero Card at Bottom - Framer specifications */
@@ -139,7 +170,7 @@ section:has(.hero-section-container) {
   -webkit-font-smoothing: antialiased;
   
   /* Framer filter effect: brightness(0.69) grayscale(1) invert(1) */
-  filter: brightness(0.69) grayscale(1) invert(1);
+  /* filter: brightness(0.69) grayscale(1) invert(1); */
   
   /* Background - adjust based on actual Framer design */
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.02) 100%);

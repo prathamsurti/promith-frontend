@@ -30,7 +30,11 @@ const Footer = () => {
             <img
               src={content.footer.logo || content.navigation.logo}
               alt={`${content.footer.companyName} Logo`}
-              className="w-12 h-12 rounded-full object-contain"
+              className="rounded-full object-contain"
+              style={{
+                width: content.footer.logoSize?.width || '48px',
+                height: content.footer.logoSize?.height || '48px'
+              }}
             />
             <h3 className="text-3xl font-display font-bold">{content.footer.companyName}</h3>
           </div>

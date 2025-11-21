@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Card, { CardHeader, CardContent } from '../ui/Card';
 import { staggerContainer, staggerItem } from '../../utils/animations';
+import './TestimonialsSection.css';
 
 export interface Testimonial {
   quote: string;
@@ -59,14 +60,14 @@ const TestimonialsSection = ({
 
         {/* Testimonials Grid */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="testimonials-grid"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
           {testimonials.map((testimonial, index) => (
-            <motion.div key={index} variants={staggerItem}>
+            <motion.div key={index} variants={staggerItem} className="testimonial-card">
               <Card variant="elevated" className="h-full">
                 <CardHeader>
                   {/* Rating */}

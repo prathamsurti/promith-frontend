@@ -2,6 +2,10 @@
   "hero": {
     "title": "Promith",
     "subtitle": "More than just a system",
+    "logoSize": {
+      "width": "120px",
+      "height": "120px"
+    },
     "backgroundVideo": "https://framerusercontent.com/assets/aMPvRVYHFQxBoB0v2qyJln83jI.mp4",
     "ctaButtons": [
       {
@@ -199,6 +203,10 @@
   },
   "navigation": {
     "logo": "/src/assets/images/Promith-Logo-Recreation-Exact-SVG-3.png",
+    "logoSize": {
+      "width": "55px",
+      "height": "55px"
+    },
     "links": [
       { "label": "Home", "href": "/" },
       { "label": "Features", "href": "/#features" },
@@ -213,6 +221,10 @@
   "footer": {
     "companyName": "Promith",
     "logo": "/src/assets/images/Promith-Logo-Recreation-Exact-SVG-3.png",
+    "logoSize": {
+      "width": "48px",
+      "height": "48px"
+    },
     "description": "AI-powered automation solutions for modern businesses",
     "links": {
       "company": [

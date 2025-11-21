@@ -9,7 +9,8 @@ export default defineConfig({
     strictPort: false,
     allowedHosts: [
       'figures-modules-person-dreams.trycloudflare.com',
-      '.trycloudflare.com'
+      '.trycloudflare.com',
+      'warm-separation-brush-radio.trycloudflare.com'
     ],
     hmr: {
       clientPort: 443,

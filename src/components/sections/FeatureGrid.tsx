@@ -60,43 +60,82 @@ const FeatureGrid: React.FC = () => {
           </p>
         </motion.div>
 
-        {/* Feature Grid */}
-        <motion.div
-          className="feature-grid"
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.2 }}
-        >
-          {/* Top Row */}
-          {content.features.features.map((feature, index) => (
-            <motion.div
-              key={index}
-              variants={item}
-              className={`feature-card ${feature.isLarge ? 'feature-card-large' : ''}`}
-            >
-              {feature.image && (
-                <div className="feature-card-image">
-                  <img src={feature.image} alt={feature.title} />
-                  <div className="feature-card-overlay"></div>
-                </div>
-              )}
-              <div className="feature-card-content">
-                {feature.icon && (
-                  <div className="feature-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox={feature.icon.viewBox}>
-                      <path d={feature.icon.content}></path>
-                    </svg>
+        {/* Feature Grid Container */}
+        <div className="feature-grid-wrapper">
+          {/* First Grid: 60% - 40% */}
+          <motion.div
+            className="feature-grid feature-grid-60-40"
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.2 }}
+          >
+            {content.features.features.slice(0, 2).map((feature, index) => (
+              <motion.div
+                key={index}
+                variants={item}
+                className={`feature-card ${feature.isLarge ? 'feature-card-large' : ''}`}
+              >
+                {feature.image && (
+                  <div className="feature-card-image">
+                    <img src={feature.image} alt={feature.title} />
+                    <div className="feature-card-overlay"></div>
                   </div>
                 )}
-                <div className="feature-text">
-                  <h3>{feature.title}</h3>
-                  <p>{feature.description}</p>
+                <div className="feature-card-content">
+                  {feature.icon && (
+                    <div className="feature-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox={feature.icon.viewBox}>
+                        <path d={feature.icon.content}></path>
+                      </svg>
+                    </div>
+                  )}
+                  <div className="feature-text">
+                    <h3>{feature.title}</h3>
+                    <p>{feature.description}</p>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          {/* Second Grid: 40% - 60% */}
+          <motion.div
+            className="feature-grid feature-grid-40-60"
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.2 }}
+          >
+            {content.features.features.slice(2, 4).map((feature, index) => (
+              <motion.div
+                key={index + 2}
+                variants={item}
+                className={`feature-card ${feature.isLarge ? 'feature-card-large' : ''}`}
+              >
+                {feature.image && (
+                  <div className="feature-card-image">
+                    <img src={feature.image} alt={feature.title} />
+                    <div className="feature-card-overlay"></div>
+                  </div>
+                )}
+                <div className="feature-card-content">
+                  {feature.icon && (
+                    <div className="feature-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox={feature.icon.viewBox}>
+                        <path d={feature.icon.content}></path>
+                      </svg>
+                    </div>
+                  )}
+                  <div className="feature-text">
+                    <h3>{feature.title}</h3>
+                    <p>{feature.description}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
 
         {/* CTA Buttons */}
         <motion.div

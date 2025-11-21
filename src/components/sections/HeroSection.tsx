@@ -3,6 +3,7 @@ import { ButtonLink } from '../ui/Button';
 import { fadeIn, slideUp, staggerContainer } from '../../utils/animations';
 import type { ButtonProps } from '../../types';
 import './HeroSection.css';
+import content from '../../data/content.json';
 
 export interface HeroSectionProps {
   title: string | React.ReactNode;
@@ -63,6 +64,10 @@ const HeroSection = ({
                 src={logoSrc} 
                 alt="Promith Logo" 
                 className="hero-logo-image"
+                style={{
+                  width: content.hero.logoSize?.width || '80px',
+                  height: content.hero.logoSize?.height || '80px'
+                }}
               />
             </div>
           )}
@@ -112,7 +117,7 @@ const HeroSection = ({
       {/* Background Video */}
       <div className="hero-video-container">
         <video
-          src="https://framerusercontent.com/assets/aMPvRVYHFQxBoB0v2qyJln83jI.mp4"
+          src="public\2K Animation.mp4"
           loop
           muted
           playsInline

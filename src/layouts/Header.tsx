@@ -19,6 +19,10 @@ const Header = () => {
             <img
               src={content.navigation.logo}
               alt="Promith Logo"
+              style={{
+                width: content.navigation.logoSize?.width || '40px',
+                height: content.navigation.logoSize?.height || '40px'
+              }}
             />
           </Link>
 
